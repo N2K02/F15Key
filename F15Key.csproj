@@ -9,6 +9,18 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>false</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
+    <ApplicationIcon>F15Key.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- Version resource: Company is shown as the Publisher in Task Manager > Startup apps. -->
+  <PropertyGroup>
+    <Company>N2K02</Company>
+    <Authors>N2K02</Authors>
+    <Product>F15Key</Product>
+    <AssemblyTitle>F15Key</AssemblyTitle>
+    <Description>Keeps Teams from going Away by pressing F15 when the PC is idle.</Description>
+    <Copyright>Copyright © N2K02 2026</Copyright>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>
