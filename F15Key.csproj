@@ -6,10 +6,16 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <ApplicationIcon>F15Key.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- dotnet publish -c Release: one exe in dist\ (needs the .NET 10 Desktop Runtime). Builds stay in bin\Release\net10.0-windows. -->
+  <PropertyGroup>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <SelfContained>false</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
-    <ApplicationIcon>F15Key.ico</ApplicationIcon>
+    <PublishDir>$(MSBuildProjectDirectory)\dist\</PublishDir>
   </PropertyGroup>
 
   <!-- Version resource: Company is shown as the Publisher in Task Manager > Startup apps. -->
